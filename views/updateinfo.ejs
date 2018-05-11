@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tour Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="../css/flexslider.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+    <!-- Flaticons  -->
+    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="colorlib-loader"></div>
+
+<div id="page">
+    <nav class="colorlib-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div id="colorlib-logo"><a href="index.html">Tour</a></div>
+                    </div>
+                    <div class="col-xs-10 text-right menu-1">
+                        <ul>
+                            <li><a href="#" onclick="redirect(3)">Home</a></li>
+                            <li><a href="#" onclick="redirect(4)">User Information</a></li>
+
+                            <li class="has-dropdown">
+                                <a href="#">QR Code</a>
+                                <ul class="dropdown">
+                                    <li><a href="#" onclick="redirect(1)">New</a></li>
+                                    <li><a href="#" onclick="redirect(2)">History</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="#">Payment</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Add Balance</a></li>
+                                    <li><a href="#" onclick="redirect(0)">History</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li class="active"><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a id="logout">Logout</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <form id="redirect" action="" method="get">
+			<input type="hidden" name="uid" id="uid">
+			<input type="hidden" name="parentid" id="parentid">
+			<input type="hidden" name="username" id="username">
+			<input type="hidden" name="isparent" id="isparent">
+    </form>
+    <aside id="colorlib-hero">
+        <div class="flexslider">
+            <ul class="slides">
+                <li style="background-image: url(images/Uber-App.png);">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 slider-text">
+                                <div class="slider-text-inner text-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- <div class="form-group text-center">
+        <input type="submit" value="Update Account" class="btn btn-primary" id ="update">
+    </div>
+    <div class="form-group text-center">
+        <input type="submit" value="Get Info" class="btn btn-primary">
+    </div>
+    <div class="form-group text-center">
+        <input type="submit" value="Ride" class="btn btn-primary">
+    </div>
+    <div class="form-group text-center">
+        <input type="submit" value="Payment" class="btn btn-primary">
+    </div> -->
+
+    <div id="colorlib-services">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-3 animate-box text-center aside-stretch">
+                    <div class="services">
+								<span class="icon">
+									<i class="flaticon-around"></i>
+								</span>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-box text-center">
+                    <div class="services">
+								<span class="icon">
+									<i class="flaticon-around"></i>
+								</span>
+
+                    </div>
+                </div>
+                <div class="col-md-3 animate-box text-center">
+                    <div class="services">
+								<span class="icon">
+									<i class="flaticon-car"></i>
+								</span>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-box text-center">
+                    <div class="services">
+								<span class="icon">
+									<i class="flaticon-postcard"></i>
+								</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="colorlib-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 animate-box">
+                
+                    <form id="userdetails_form" method="post" action="/userinformation/changeUserdetails">
+                        <h3>User Details</h3>
+                    <input type="hidden" name="uid" id="uid" value="<%=data.uid%>">
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label for="fname">Username</label>
+                                <input type="text" id="username" name="username" class="form-control" value="<%=data.username%>">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label for="fname">Phone</label>
+                                <input type="text" id="phone" name="phone" class="form-control"  value="<%=data.phone%>">
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label for="fname">Email</label>
+                                <input type="text" id="email" name="email" class="form-control"  value="<%=data.email%>">
+                            </div>
+                    </div>
+
+                    
+                        <div class="form-group text-center" >
+                            <input type="submit" value="Submit" class="btn btn-primary" id ="login_view">
+                        </div>
+
+                    </form>
+                
+                <div>
+                    <h2>Add Child with Email</h2> 
+
+                    <!-- <button id="hide">Hide</button> -->
+                <!-- <button id="show">Add now</button> -->
+               
+                <input type="text" name="chemail" id="chemail">    
+                <input type="button" value="Add" id="aaa">   
+
+                </div>
+                <br><br><br>
+                <!-- <form id="addchild_form" method="post" action="/userinformation/childadd">
+                    <h3>Add child</h3>
+
+                   <div class="form-group text-center" >
+                        <input type="submit" value="Add" class="btn btn-primary" id ="login_view">
+                    </div>
+                </form>
+ -->
+                <!-- <p>Remove Child with Email.</p>
+
+                <input type="text" name="chemail1" id="chemail1">    
+                <input type="button" value="Remove" id="bbb">
+ -->
+                <div>
+                        <h2>Current family members</h2>
+                <table id="childs" border="1">
+                    </table>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="../js/jquery.flexslider-min.js"></script>
+    <!-- Owl carousel -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/magnific-popup-options.js"></script>
+    <!-- Date Picker -->
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="../js/jquery.stellar.min.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+    <script src="../js/google_map.js"></script>
+
+    <!-- Main -->
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+
+
+
+          $(document).ready(function(){
+
+
+
+                    // Check browser support
+        if (typeof(Storage) !== "undefined") {
+            // Store
+            //localStorage.setItem({"user":{"ID":"5af2821a6ac6095537c6afb2","USERNAME":"neha.jethani@sjsu.edu","PARENT_ID":"5af2821a6ac6095537c6afb2","IS_PARENT":""}});
+            // Retrieve
+            //var c="trrtfrruser.PARENT_ID"
+            //localStorage.setItem("user_details", JSON.stringify({"user":{"ID":"7613","USERNAME":"neha.jethani@sjsu.edu","PARENT_ID":"5af2821a6ac6095537c6afb2","IS_PARENT":""}}));
+            document.getElementById("uid").innerHTML = localStorage.getItem("user_details");
+            var x=JSON.parse(localStorage.getItem("user_details"));
+            var y=x.user.ID
+            console.log(x.user.ID)
+            document.getElementById("uid").value = y;
+            //alert(y);
+        } else {
+            document.getElementById("uid").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+
+
+
+        var aa = document.getElementById("uid").value;
+        //alert(document.getElementById("uid").value);
+        $.ajax({url: "/userinformation/getchild?uid="+aa, success: function(myJSON){
+          //  alert(document.getElementById("uid").value);
+
+        //myJSON.push({'delete':"<input type='button' value='Remove' id='bbb'>"});
+        //myJSON[5] = {'delete':"<input type='button' value='Remove' id='bbb'>"};
+            var columns = addAllColumnHeaders(myJSON, '#childs');
+            //myJSON.push({'delete':"<input type='button' value='Remove' id='bbb'>"});
+            for (var i = 0; i < myJSON.length; i++) {
+                var row$ = $('<tr/>');
+
+                for (var colIndex = 0; colIndex < columns.length; colIndex++) {
+                    var cellValue = myJSON[i][columns[colIndex]];
+                    if (cellValue == null) cellValue = "";
+                    row$.append($('<td/>').html(cellValue));
+                }
+                row$.append($('<td>').html("<input type='button' value='Remove' onClick=remove_Child('"+ myJSON[i].uid +"','"+ myJSON[i].email+"')>"));
+                $('#childs').append(row$);
+            }
+        }});
+    });
+
+     function addAllColumnHeaders(myJSON, selector) {
+        var columnSet = [];
+        var headerTr$ = $('<tr/>');
+
+        for (var i = 0; i < myJSON.length; i++) {
+            var rowHash = myJSON[i];
+            for (var key in rowHash) {
+                if ($.inArray(key, columnSet) == -1) {
+                    columnSet.push(key);
+                    headerTr$.append($('<th/>').html(key));
+                }
+            }
+        }
+            $(selector).append(headerTr$);
+
+            return columnSet;
+        }
+
+
+
+
+
+//show hide add user field
+// $(document).ready(function(){
+//     $("#show").click(function(){
+//         $("p").show();
+//     });
+// });
+
+//ajax call for adding child
+$(document).ready(function(){
+    $("#aaa").click(function(){
+        $.ajax({url: "/userinformation/childadd", data:{'uid':document.getElementById("uid").value, 'email':document.getElementById("chemail").value}, type:"POST", success: function(result){
+            // $("#aaa").html(result);
+        }});
+    });
+});
+
+ function redirect(type)
+        {
+            var url = [];
+            url.push("/balance/getTranHistory");
+            url.push("/qrcode/getQrCode");
+            url.push("/qrcode/getHistory");
+            url.push("/clipper")
+            url.push("/userinformation")
+            $('#redirect').attr("action", url[type]);
+            $('#redirect').submit();
+        }
+
+// Adds a header row to the table and returns the set of columns.
+// Need to do union of keys from all records as some records may not contain
+// all records.
+
+</script>
+
+<script>
+
+
+    function remove_Child(user_id,email){
+    alert()
+        $.ajax({url: "/userinformation/childremove", data:{'uid':user_id, 'email':email}, type:"POST", success: function(result){
+            // $("#aaa").html(result);
+        }});
+    };
+</script>
+
+</body>
+</html>
