@@ -4,6 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
+  console.log("error in index:"+err)
   ejs.renderFile('./views/services.ejs',function(err,result){
     
     if (!err) {
